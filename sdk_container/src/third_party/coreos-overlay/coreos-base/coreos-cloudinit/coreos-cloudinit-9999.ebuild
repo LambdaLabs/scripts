@@ -14,7 +14,7 @@ if [[ ${PV} == 9999 ]]; then
 	EGIT_REPO_URI="https://github.com/flatcar/coreos-cloudinit.git"
 	inherit git-r3
 else
-	EGIT_VERSION="1c1d7f4ae6b933350d7fd36e882dda170123cccc" # main
+	EGIT_VERSION="fb088ff8d30c316435c901351f3b03604cfc8a9b"
 	SRC_URI="https://github.com/flatcar/coreos-cloudinit/archive/${EGIT_VERSION}.tar.gz -> ${PN}-${EGIT_VERSION}.tar.gz"
 	S="${WORKDIR}/${PN}-${EGIT_VERSION}"
 	KEYWORDS="amd64 arm64"
